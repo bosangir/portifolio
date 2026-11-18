@@ -1,113 +1,109 @@
 /* Content for the portfolio. Edit here to update the site. */
 window.PORTFOLIO = {
-  typed: [
-    "library(SUMO); simulate_multiomics(n_factors = 4)",
-    "survfit(Surv(time, event) ~ arm, data = trial)",
-    "glmer(seroconv ~ visit * arm + (1 | site), family = binomial)",
-    "svymean(~vaccinated, design = cluster_design)",
-    "proc mixed data=adam.adlb; class usubjid visit;",
-    "mabc(list(rna, methyl, protein), k = 3)",
-    "brm(cases ~ arm, family = binomial, prior = prior)"
-  ],
-
-  angles: [
+  areas: [
     {
-      id: "trials", icon: "⚕", title: "Clinical trials",
+      title: "Clinical trials",
       lead: "Randomised trials from protocol to final report.",
-      body: "Sample-size calculations, statistical analysis plans, randomisation, interim and DSMB reports, and final analyses. I've worked on a phase II Ebola vaccine trial in the DRC, HIV-prevention studies in Kenya, and now serve on a Data and Safety Monitoring Board for a DNDi trial.",
-      points: ["SAPs & DSMB reports", "Mixed models for repeated measures", "Immunogenicity & safety", "CDISC-style datasets"],
-      tools: ["R", "SAS", "REDCap", "lme4"]
+      body: "I write sample-size calculations and statistical analysis plans, prepare randomisation, interim and DSMB reports, and run final analyses. I worked on a phase II Ebola vaccine trial in the DRC and on HIV-prevention studies in Kenya, and I now sit on the Data and Safety Monitoring Board of a DNDi trial.",
+      points: ["Statistical analysis plans and DSMB reports", "Mixed models for repeated measures", "Immunogenicity and safety analyses", "Analysis datasets and validation"],
+      tools: "R, SAS, REDCap"
     },
     {
-      id: "vaccines", icon: "💉", title: "Vaccine epidemiology",
+      title: "Vaccine epidemiology",
       lead: "Immunogenicity, seroprevalence and vaccine effectiveness.",
-      body: "Analyses of antibody responses, booster timing, seroprevalence in health-care workers and vaccine effectiveness. Co-author of trial results in The Lancet Infectious Diseases and The Journal of Infectious Diseases.",
-      points: ["Geometric mean concentrations", "Booster comparisons", "Seroprevalence", "Vaccine effectiveness"],
-      tools: ["R", "SAS", "Stata-style workflows"]
+      body: "I analyse antibody responses, booster timing, seroprevalence among health-care workers and vaccine effectiveness. I am a co-author of trial results in The Lancet Infectious Diseases and The Journal of Infectious Diseases.",
+      points: ["Geometric mean concentrations", "Booster comparisons", "Seroprevalence studies", "Vaccine effectiveness"],
+      tools: "R, SAS"
     },
     {
-      id: "surveys", icon: "📋", title: "Survey statistics",
-      lead: "Coverage surveys that hold up to scrutiny.",
-      body: "Complex sample designs, weighting, design effects and coverage estimation for vaccination coverage surveys, including WHO VCQI-style indicators. I build pipelines that check data consistency, de-identify records and produce reproducible coverage tables.",
-      points: ["Cluster & stratified designs", "Weights & design effects", "Card vs recall evidence", "Data-quality listings"],
-      tools: ["R survey", "vcqiR", "SurveyCTO", "ODK"]
+      title: "Survey statistics",
+      lead: "Coverage surveys with defensible estimates.",
+      body: "I work with cluster and stratified designs, survey weights and design effects to estimate vaccination coverage, including WHO VCQI indicators. My pipelines check data consistency, de-identify records and produce reproducible coverage tables.",
+      points: ["Cluster and stratified designs", "Weights and design effects", "Card and recall evidence", "Data-quality listings"],
+      tools: "R survey, vcqiR, SurveyCTO, ODK"
     },
     {
-      id: "omics", icon: "🧬", title: "Bioinformatics & multi-omics",
-      lead: "Integrating many data layers into one picture.",
-      body: "My PhD develops methods to integrate transcriptomics, methylation, proteomics and other omics layers: latent-factor models, integrative and ensemble clustering, and biclustering under weak or heterogeneous signals.",
-      points: ["Factor analysis & MOFA-type models", "Ensemble clustering (M-ABC)", "Biclustering", "Simulation (SUMO)"],
-      tools: ["R", "Bioconductor", "Rcpp", "HPC"]
+      title: "Bioinformatics and multi-omics",
+      lead: "Combining several molecular data layers.",
+      body: "My PhD develops methods to integrate transcriptomics, methylation, proteomics and other omics data. The work covers latent-factor models, integrative and ensemble clustering, and biclustering when signals are weak or uneven.",
+      points: ["Factor analysis for multi-omics", "Ensemble clustering (M-ABC)", "Biclustering", "Simulation of omics data (SUMO)"],
+      tools: "R, Bioconductor, Rcpp, high-performance computing"
     },
     {
-      id: "ml", icon: "🤖", title: "Machine learning & AI",
-      lead: "Prediction and pattern-finding, with interpretation.",
-      body: "Supervised and unsupervised learning for health data, model evaluation and benchmarking, explainable AI and fairness, plus LLM and retrieval-augmented tools for research workflows.",
-      points: ["Penalised regression & trees", "Clustering & dimension reduction", "Explainability (XAI)", "LLM & RAG pipelines"],
-      tools: ["R", "Python", "scikit-learn", "Hugging Face"]
+      title: "Machine learning",
+      lead: "Prediction and pattern finding that can be explained.",
+      body: "I use supervised and unsupervised learning on health data, with attention to validation, benchmarking, interpretability and fairness. I also use language-model and retrieval tools to support research workflows.",
+      points: ["Penalised regression and tree models", "Clustering and dimension reduction", "Model validation and benchmarking", "Interpretable machine learning"],
+      tools: "R, Python, scikit-learn"
     },
     {
-      id: "longitudinal", icon: "📈", title: "Longitudinal & survival",
-      lead: "Data that unfold over time.",
-      body: "Mixed-effects and GEE models for repeated measures, survival and time-to-event analysis, hidden Markov and finite mixture models, and Bayesian hierarchical models.",
-      points: ["Linear & generalised mixed models", "Kaplan–Meier & Cox", "Bayesian hierarchical models", "Missing data & MI"],
-      tools: ["R", "SAS", "OpenBUGS", "Stan"]
+      title: "Longitudinal and survival data",
+      lead: "Outcomes measured over time.",
+      body: "I fit mixed-effects and GEE models for repeated measures, survival and time-to-event models, hidden Markov and finite mixture models, and Bayesian hierarchical models.",
+      points: ["Linear and generalised mixed models", "Kaplan–Meier and Cox models", "Bayesian hierarchical models", "Missing data and multiple imputation"],
+      tools: "R, SAS, OpenBUGS, Stan"
     },
     {
-      id: "data", icon: "🗄", title: "Research data management",
-      lead: "The systems behind trustworthy results.",
-      body: "Database design, electronic data capture, validation rules, query management, data cleaning and secure, de-identified data sharing for trials and cohorts in Kenya and the DRC.",
-      points: ["eCRF design in REDCap & ODK", "Edit checks & query logs", "De-identification & GDPR", "Data management plans"],
-      tools: ["REDCap", "ODK", "SQL", "Git"]
+      title: "Research data management",
+      lead: "Data systems that results can rely on.",
+      body: "I design databases and electronic case report forms, write validation rules, manage queries, clean data and prepare de-identified datasets for sharing. I have done this for trials and cohorts in Kenya and the DRC.",
+      points: ["eCRF design in REDCap and ODK", "Edit checks and query logs", "De-identification and GDPR", "Data management plans"],
+      tools: "REDCap, ODK, SQL, Git"
     },
     {
-      id: "viz", icon: "📊", title: "Visualisation & dashboards",
-      lead: "Results that people can read and use.",
-      body: "Publication figures, interactive Shiny apps and programme dashboards that turn analyses into decisions, plus spatial maps for public-health questions.",
-      points: ["ggplot2 publication figures", "Shiny dashboards", "Power BI & Tableau", "Spatial epidemiology"],
-      tools: ["ggplot2", "Shiny", "Power BI", "QGIS"]
+      title: "Visualisation and dashboards",
+      lead: "Results that readers can use.",
+      body: "I prepare figures for publication, interactive Shiny applications and programme dashboards, and maps for public-health questions.",
+      points: ["Publication figures in ggplot2", "Shiny applications", "Power BI and Tableau", "Spatial epidemiology"],
+      tools: "ggplot2, Shiny, Power BI, QGIS"
     }
   ],
 
   timeline: [
     {
-      when: "Aug 2025 – now", role: "Independent Biostatistician", org: "Neudata Consulting Ltd",
-      tags: ["DSMB", "Clinical trials"],
-      details: ["Member of the Data and Safety Monitoring Board for a DNDi (Drugs for Neglected Diseases initiative) trial in the DRC", "Statistical consulting for clinical and public-health studies", "Course development in clinical research and scientific communication"]
+      when: "Aug 2025 – present", role: "Co-founder and Biostatistician", org: "Neudata Consulting Ltd",
+      tags: "Consulting, clinical trials, training",
+      details: [
+        "Co-founded a consultancy for biostatistics, data science, research data management and training",
+        "Member of the Data and Safety Monitoring Board for a DNDi (Drugs for Neglected Diseases initiative) trial in the DRC",
+        "Statistical support for clinical and public-health studies, from design and sample size to final reports",
+        "Course development in clinical research, statistical inference and scientific communication"
+      ],
+      link: { href: "https://www.neu-data.com", text: "neu-data.com" }
     },
     {
-      when: "Aug 2023 – now", role: "PhD Researcher, Biostatistics & Statistical Bioinformatics", org: "SCK CEN & Hasselt University, Belgium",
-      tags: ["Multi-omics", "R software", "Methods"],
-      details: ["Statistical methods and software for integrating big bio-molecular data", "Developed SUMO (Bioinformatics Advances, 2025) and M-ABC", "Benchmarking unsupervised factor-analysis methods for multi-omics integration"]
+      when: "Aug 2023 – present", role: "PhD Researcher, Biostatistics and Statistical Bioinformatics", org: "SCK CEN and Hasselt University, Belgium",
+      tags: "Multi-omics, R software, methods",
+      details: ["Statistical methods and software for integrating large molecular datasets", "Developed SUMO (Bioinformatics Advances, 2025) and M-ABC", "Benchmark of unsupervised factor-analysis methods for multi-omics integration"]
     },
     {
-      when: "Aug 2020 – now", role: "Teaching Assistant", org: "Hasselt University & University of Antwerp",
-      tags: ["R", "Data management", "Teaching"],
-      details: ["R programming for the Master of Statistics and Data Science (Hasselt)", "Data management and statistical software for the Master of Epidemiology (Antwerp)", "Epidemiology, Biostatistics & Qualitative Research Methods summer course"]
+      when: "Aug 2020 – present", role: "Teaching Assistant", org: "Hasselt University and University of Antwerp",
+      tags: "R, data management, teaching",
+      details: ["R programming for the Master of Statistics and Data Science (Hasselt)", "Data management and statistical software for the Master of Epidemiology (Antwerp)", "Epidemiology, Biostatistics and Qualitative Research Methods summer course"]
     },
     {
-      when: "Sep 2020 – Aug 2023", role: "Biostatistician & Data Manager", org: "University of Antwerp · CEV & Global Health Institute",
-      tags: ["Ebola vaccine", "Phase II RCT", "DRC"],
-      details: ["Biostatistics and data management for EBOVAC, a randomised phase II trial of a heterologous Ebola vaccine regimen in DRC health-care providers", "Immunogenicity, safety and booster analyses published in The Lancet Infectious Diseases and The Journal of Infectious Diseases", "Seroprevalence, trial-understanding and iris-scanning identification studies"]
+      when: "Sep 2020 – Aug 2023", role: "Biostatistician and Data Manager", org: "University of Antwerp, CEV and Global Health Institute",
+      tags: "Ebola vaccine, phase II trial, DRC",
+      details: ["Biostatistics and data management for EBOVAC, a randomised phase II trial of a heterologous Ebola vaccine regimen in health-care providers in the DRC", "Immunogenicity, safety and booster analyses published in The Lancet Infectious Diseases and The Journal of Infectious Diseases", "Studies on seroprevalence, trial understanding and iris-scan identification"]
     },
     {
-      when: "Oct 2017 – Aug 2018", role: "Statistician & Data Manager", org: "KEMRI – University of Washington, Thika, Kenya",
-      tags: ["HIV prevention", "PrEP", "Cohorts"],
-      details: ["SCIP: mHealth safer-conception intervention for serodiscordant couples", "JiPime-JiPrEP: HIV self-testing for efficient PrEP delivery; MPYA: PrEP in young women", "NuvaRing, GHS (HSV-2 inception cohort), Merck III (HPV vaccine immunogenicity to 48 months) and the Partners Demonstration Project"]
+      when: "Oct 2017 – Aug 2018", role: "Statistician and Data Manager", org: "KEMRI – University of Washington, Thika, Kenya",
+      tags: "HIV prevention, PrEP, cohorts",
+      details: ["SCIP: an mHealth safer-conception intervention for serodiscordant couples", "JiPime-JiPrEP: HIV self-testing for PrEP delivery. MPYA: PrEP use in young women", "NuvaRing, GHS (an HSV-2 inception cohort), Merck III (HPV vaccine immunogenicity to 48 months) and the Partners Demonstration Project"]
     },
     {
-      when: "Feb 2017 – Sep 2017", role: "Data Management Specialist", org: "PACT Endeleza · University of Maryland, Baltimore (Nairobi)",
-      tags: ["HIV programme", "M&E"],
-      details: ["Data systems for a comprehensive HIV prevention and treatment programme", "Routine reporting, data-quality audits and programme dashboards"]
+      when: "Feb 2017 – Sep 2017", role: "Data Management Specialist", org: "PACT Endeleza, University of Maryland, Baltimore (Nairobi)",
+      tags: "HIV programme, monitoring and evaluation",
+      details: ["Data systems for a comprehensive HIV prevention and treatment programme", "Routine reporting and data-quality audits"]
     },
     {
       when: "Sep 2015 – Jan 2017", role: "Research Assistant", org: "KEMRI – University of Washington, Thika, Kenya",
-      tags: ["Data collection", "REDCap", "ODK"],
-      details: ["Electronic data capture and data cleaning for HIV-prevention research", "Trained in research data management with REDCap and ODK (University of Washington)"]
+      tags: "Data collection, REDCap, ODK",
+      details: ["Electronic data capture and data cleaning for HIV-prevention research", "Training in research data management with REDCap and ODK (University of Washington)"]
     },
     {
-      when: "Sep 2014 – Dec 2014", role: "Junior Statistician (Intern)", org: "Ministry of Agriculture, Livestock & Fisheries, Kenya",
-      tags: ["Official statistics"],
+      when: "Sep 2014 – Dec 2014", role: "Junior Statistician (internship)", org: "Ministry of Agriculture, Livestock and Fisheries, Kenya",
+      tags: "Official statistics",
       details: ["Central Planning and Project Monitoring Unit: project monitoring data and summary statistics"]
     }
   ],
@@ -123,27 +119,27 @@ window.PORTFOLIO = {
     { y: 2023, area: "Vaccines", title: "Low seroprevalence of Ebola virus in health care providers in an endemic region (Tshuapa province) of the DRC", venue: "PLOS ONE 18(9): e0286479", authors: "Zola Matuvanga T, Mariën J, Larivière Y, Osang'ir BI, et al." },
     { y: 2023, area: "Vaccines", title: "Longitudinal assessment of an Ebola vaccine trial understanding among healthcare providers in the DRC", venue: "Vaccine", authors: "Zola Matuvanga T, Larivière Y, Lemey G, Osang'ir BI, et al." },
     { y: 2023, area: "Global health", title: "Conducting an Ebola vaccine trial in a remote area of the DRC: challenges, mitigations, and lessons learned", venue: "Vaccine 41(51): 7587–7597", authors: "Larivière Y, Zola Matuvanga T, Lemey G, Osang'ir BI, et al." },
-    { y: 2019, area: "HIV & SRH", title: "Acceptance of contraceptive vaginal ring among women with bacterial vaginosis and their male partners in Kenya (P334)", venue: "Sexually Transmitted Infections 95:A175", authors: "Ngure K, Heller K, Osang'ir I, Irungu E, et al." },
-    { y: 2018, area: "HIV & SRH", title: "Contraception use and pregnancy incidence in young African women using PrEP", venue: "AIDS 2018, Abstract P07.09", authors: "Micheni M, Pyra M, Osangir I, Ngure K, Mugo N, Bukusi E, Haberer J, Baeten J." }
+    { y: 2019, area: "HIV and SRH", title: "Acceptance of contraceptive vaginal ring among women with bacterial vaginosis and their male partners in Kenya (P334)", venue: "Sexually Transmitted Infections 95:A175", authors: "Ngure K, Heller K, Osang'ir I, Irungu E, et al." },
+    { y: 2018, area: "HIV and SRH", title: "Contraception use and pregnancy incidence in young African women using PrEP", venue: "AIDS 2018, Abstract P07.09", authors: "Micheni M, Pyra M, Osangir I, Ngure K, Mugo N, Bukusi E, Haberer J, Baeten J." }
   ],
 
   radar: [
     { k: "Biostatistics", v: 9.5 },
     { k: "Clinical trials", v: 9 },
     { k: "Data management", v: 9.5 },
-    { k: "R & software", v: 9.5 },
+    { k: "R and software", v: 9.5 },
     { k: "Bioinformatics", v: 8.5 },
     { k: "Machine learning", v: 8 },
-    { k: "AI & LLMs", v: 7.5 },
-    { k: "Cloud & data pipelines", v: 7 }
+    { k: "AI and LLMs", v: 7.5 },
+    { k: "Cloud and data pipelines", v: 7 }
   ],
 
-  ai: [
-    { icon: "🧠", title: "Machine learning for health", items: ["Supervised & unsupervised learning", "Model evaluation & interpretability", "AutoML: H2O.ai, Google AutoML, DataRobot"] },
-    { icon: "⚖️", title: "Responsible AI", items: ["Explainable AI (XAI)", "Fairness in machine learning", "Differential privacy & anonymisation", "Synthetic data for privacy-preserving simulation"] },
-    { icon: "💬", title: "LLMs & agentic AI", items: ["Transformers & LLMs for biomedical data", "Retrieval-augmented generation for health knowledge", "LangChain & LLM orchestration", "Agentic AI & human–AI collaboration", "OpenAI API & Hugging Face for research automation"] },
-    { icon: "☁️", title: "Cloud & data engineering", items: ["AWS, Google Cloud & Azure for health data", "BigQuery & Snowflake warehousing", "Airflow / Prefect orchestration", "dbt & ETL pipelines", "Docker & GitHub for reproducibility"] },
-    { icon: "🏥", title: "Health data standards", items: ["FHIR / HL7 interoperability", "OMOP Common Data Model (OHDSI)", "Real-world data & evidence", "GCP & human-subjects protection", "GDPR & HIPAA compliance"] },
-    { icon: "🗺️", title: "Spatial, M&E & dashboards", items: ["Spatial epidemiology in R (sf, tmap, spdep)", "QGIS / ArcGIS Pro", "M&E and implementation research (MEASURE Evaluation)", "Shiny, Dash, Streamlit, Power BI, Tableau, Grafana"] }
+  training: [
+    { title: "Machine learning for health", items: ["Supervised and unsupervised learning", "Model evaluation and interpretability", "AutoML platforms: H2O.ai, Google AutoML, DataRobot"] },
+    { title: "Responsible use of AI", items: ["Explainable AI", "Fairness in machine learning", "Differential privacy and anonymisation", "Synthetic data for privacy-preserving simulation"] },
+    { title: "Language models and agents", items: ["Transformers and LLMs for biomedical data", "Retrieval-augmented generation for health knowledge", "LangChain and LLM orchestration", "Agentic AI and human–AI collaboration", "OpenAI API and Hugging Face for research automation"] },
+    { title: "Cloud and data engineering", items: ["AWS, Google Cloud and Azure for health data", "BigQuery and Snowflake", "Airflow and Prefect", "dbt and ETL pipelines", "Docker and GitHub for reproducibility"] },
+    { title: "Health data standards", items: ["FHIR and HL7 interoperability", "OMOP Common Data Model (OHDSI)", "Real-world data and evidence", "Good Clinical Practice and human-subjects protection", "GDPR and HIPAA compliance"] },
+    { title: "Spatial analysis, M&E and dashboards", items: ["Spatial epidemiology in R (sf, tmap, spdep)", "QGIS and ArcGIS Pro", "M&E and implementation research (MEASURE Evaluation)", "Shiny, Dash, Streamlit, Power BI, Tableau and Grafana"] }
   ]
 };
