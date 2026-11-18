@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bernard Isekah Osang'ir · Biostatistician &amp; Data Scientist</title>
+  <meta name="description" content="Portfolio of Bernard Isekah Osang'ir: biostatistician, data scientist and PhD researcher working on clinical trials, vaccine epidemiology, survey statistics, multi-omics integration, machine learning and reproducible R software.">
+  <meta property="og:title" content="Bernard Isekah Osang'ir · Biostatistician & Data Scientist">
+  <meta property="og:description" content="Statistics from many angles: clinical trials, vaccines, surveys, multi-omics, machine learning and research software.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Cpath d='M8 48 C20 48 22 14 32 14 S44 48 56 48' fill='none' stroke='%232dd4bf' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-mark">BO</span>
+      <span class="brand-name">Bernard Osang'ir</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#angles">Expertise</a>
+      <a href="#lab">Stats Lab</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#ai">AI &amp; Tools</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="dot"></span> Biostatistician · Data Scientist · PhD Researcher · Mol, Belgium</p>
+          <h1>Statistics from <em>every angle</em>,<br>for decisions that matter.</h1>
+          <div class="codeline"><span class="prompt">&gt;</span> <span id="typed"></span><span class="caret">▍</span></div>
+          <p class="lead">I'm Bernard Isekah Osang'ir. For over ten years I've designed, managed and analysed data for clinical trials, vaccine studies and public-health programmes across Kenya, the DRC and Belgium. Today I build statistical methods and R software for multi-omics integration, and I teach R and biostatistics at postgraduate level.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#lab">Play in the Stats Lab →</a>
+            <a class="btn" href="#research">Research &amp; software</a>
+            <a class="btn ghost" href="#contact">Work with me</a>
+          </div>
+        </div>
+        <aside class="hero-card reveal" aria-label="At a glance">
+          <div class="hc-head">
+            <span class="hc-avatar">BO</span>
+            <div>
+              <strong>Bernard Isekah Osang'ir</strong>
+              <small>SCK CEN &amp; Hasselt University</small>
+            </div>
+          </div>
+          <div class="hc-stats">
+            <div><b data-count="10" data-suffix="+">0</b><span>years in health research</span></div>
+            <div><b data-count="10" data-suffix="+">0</b><span>clinical trials &amp; cohorts</span></div>
+            <div><b data-count="12">0</b><span>publications &amp; abstracts</span></div>
+            <div><b data-count="3">0</b><span>countries: Kenya, DRC, Belgium</span></div>
+          </div>
+          <div class="hc-mini">
+            <svg viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="g1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#2dd4bf" stop-opacity=".45"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></linearGradient></defs>
+              <path id="miniArea" fill="url(#g1)" d=""/>
+              <path id="miniLine" fill="none" stroke="#2dd4bf" stroke-width="2" d=""/>
+            </svg>
+            <small>Live: posterior density, updating as new data arrive</small>
+          </div>
+        </aside>
+      </div>
+      <a class="scroll-hint" href="#angles" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- TOOLS MARQUEE -->
+    <div class="marquee" aria-label="Tools I use">
+      <div class="marquee-track">
+        <span>R</span><span>SAS</span><span>Python</span><span>SQL</span><span>REDCap</span><span>ODK</span><span>SurveyCTO</span><span>Shiny</span><span>Quarto</span><span>Rcpp</span><span>tidyverse</span><span>lme4</span><span>survival</span><span>OpenBUGS</span><span>Stan</span><span>Bioconductor</span><span>scikit-learn</span><span>Power BI</span><span>Tableau</span><span>QGIS</span><span>Docker</span><span>GitHub Actions</span><span>BigQuery</span><span>LangChain</span><span>Hugging Face</span>
+        <span>R</span><span>SAS</span><span>Python</span><span>SQL</span><span>REDCap</span><span>ODK</span><span>SurveyCTO</span><span>Shiny</span><span>Quarto</span><span>Rcpp</span><span>tidyverse</span><span>lme4</span><span>survival</span><span>OpenBUGS</span><span>Stan</span><span>Bioconductor</span><span>scikit-learn</span><span>Power BI</span><span>Tableau</span><span>QGIS</span><span>Docker</span><span>GitHub Actions</span><span>BigQuery</span><span>LangChain</span><span>Hugging Face</span>
+      </div>
+    </div>
+
+    <!-- ANGLES -->
+    <section class="section" id="angles">
+      <div class="section-head reveal">
+        <p class="kicker">Expertise</p>
+        <h2>One statistician, many angles</h2>
+        <p class="sub">My work moves between the trial site, the survey team, the lab and the classroom. Pick an area to see what I do there.</p>
+      </div>
+      <div class="angles">
+        <div class="angle-tabs reveal" role="tablist" id="angleTabs"></div>
+        <article class="angle-panel reveal" id="anglePanel" role="tabpanel" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <!-- STATS LAB -->
+    <section class="section lab-section" id="lab">
+      <div class="section-head reveal">
+        <p class="kicker">Interactive</p>
+        <h2>The Stats Lab</h2>
+        <p class="sub">Six small simulations of methods I use every week. Move the sliders and the numbers are recomputed in your browser.</p>
+      </div>
+      <div class="lab-tabs reveal" role="tablist" id="labTabs">
+        <button class="active" data-lab="clt">Central limit theorem</button>
+        <button data-lab="km">Survival curves</button>
+        <button data-lab="bayes">Bayesian vaccine efficacy</button>
+        <button data-lab="power">Trial sample size</button>
+        <button data-lab="cluster">Clustering</button>
+        <button data-lab="survey">Coverage survey</button>
+      </div>
+
+      <div class="lab reveal">
+        <!-- CLT -->
+        <div class="lab-pane active" id="lab-clt">
+          <div class="lab-controls">
+            <h3>Sample means become normal</h3>
+            <p>Draw repeated samples from a skewed population and watch the distribution of their means settle into a bell curve.</p>
+            <label>Population
+              <select id="cltDist">
+                <option value="exp">Exponential (right-skewed)</option>
+                <option value="unif">Uniform</option>
+                <option value="bimodal">Bimodal</option>
+                <option value="bern">Bernoulli (p = 0.2)</option>
+              </select>
+            </label>
+            <label>Sample size n = <output id="cltNOut">5</output>
+              <input type="range" id="cltN" min="1" max="100" value="5">
+            </label>
+            <div class="btn-row">
+              <button class="btn small primary" id="cltRun">Draw 1,000 samples</button>
+              <button class="btn small" id="cltReset">Reset</button>
+            </div>
+            <dl class="readout">
+              <div><dt>Samples</dt><dd id="cltCount">0</dd></div>
+              <div><dt>Mean of means</dt><dd id="cltMean">–</dd></div>
+              <div><dt>SD of means</dt><dd id="cltSd">–</dd></div>
+              <div><dt>Theory σ/√n</dt><dd id="cltSe">–</dd></div>
+            </dl>
+          </div>
+          <div class="lab-view"><canvas id="cltCanvas"></canvas></div>
+        </div>
+
+        <!-- KM -->
+        <div class="lab-pane" id="lab-km">
+          <div class="lab-controls">
+            <h3>Kaplan–Meier and the log-rank test</h3>
+            <p>Two trial arms with exponential event times and random censoring. Change the hazard ratio and see how quickly the curves separate.</p>
+            <label>Hazard ratio (treatment vs control) = <output id="kmHrOut">0.60</output>
+              <input type="range" id="kmHr" min="0.3" max="1.5" step="0.05" value="0.6">
+            </label>
+            <label>Patients per arm = <output id="kmNOut">80</output>
+              <input type="range" id="kmN" min="20" max="300" step="10" value="80">
+            </label>
+            <label>Censoring rate = <output id="kmCOut">20%</output>
+              <input type="range" id="kmC" min="0" max="60" step="5" value="20">
+            </label>
+            <div class="btn-row"><button class="btn small primary" id="kmRun">Simulate new trial</button></div>
+            <dl class="readout">
+              <div><dt>Events (C / T)</dt><dd id="kmEv">–</dd></div>
+              <div><dt>Median (C / T)</dt><dd id="kmMed">–</dd></div>
+              <div><dt>Log-rank χ²</dt><dd id="kmChi">–</dd></div>
+              <div><dt>p-value</dt><dd id="kmP">–</dd></div>
+            </dl>
+          </div>
+          <div class="lab-view"><canvas id="kmCanvas"></canvas></div>
+        </div>
+
+        <!-- BAYES -->
+        <div class="lab-pane" id="lab-bayes">
+          <div class="lab-controls">
+            <h3>Bayesian vaccine efficacy</h3>
+            <p>With 1:1 randomisation, the share of cases that fall in the vaccine arm, θ, maps to efficacy VE = 1 − θ/(1−θ). A Beta prior on θ is updated with the observed case split.</p>
+            <label>Cases in vaccine arm = <output id="byVOut">8</output>
+              <input type="range" id="byV" min="0" max="60" value="8">
+            </label>
+            <label>Cases in placebo arm = <output id="byPOut">62</output>
+              <input type="range" id="byP" min="1" max="200" value="62">
+            </label>
+            <label>Prior
+              <select id="byPrior">
+                <option value="flat">Flat Beta(1, 1)</option>
+                <option value="skept">Sceptical Beta(5, 5), centred on VE = 0</option>
+                <option value="pfizer">Optimistic Beta(0.700102, 1)</option>
+              </select>
+            </label>
+            <dl class="readout">
+              <div><dt>Posterior median VE</dt><dd id="byMed">–</dd></div>
+              <div><dt>95% credible interval</dt><dd id="byCri">–</dd></div>
+              <div><dt>P(VE &gt; 30%)</dt><dd id="byP30">–</dd></div>
+              <div><dt>P(VE &gt; 50%)</dt><dd id="byP50">–</dd></div>
+            </dl>
+          </div>
+          <div class="lab-view"><canvas id="bayesCanvas"></canvas></div>
+        </div>
+
+        <!-- POWER -->
+        <div class="lab-pane" id="lab-power">
+          <div class="lab-controls">
+            <h3>How many participants does the trial need?</h3>
+            <p>Sample size for comparing two proportions, such as seroconversion or event rates, with a two-sided test. The curve shows power across sample sizes.</p>
+            <label>Control proportion p₁ = <output id="pwP1Out">0.30</output>
+              <input type="range" id="pwP1" min="0.02" max="0.9" step="0.01" value="0.30">
+            </label>
+            <label>Treatment proportion p₂ = <output id="pwP2Out">0.18</output>
+              <input type="range" id="pwP2" min="0.02" max="0.9" step="0.01" value="0.18">
+            </label>
+            <label>Significance α = <output id="pwAOut">0.05</output>
+              <input type="range" id="pwA" min="0.01" max="0.10" step="0.01" value="0.05">
+            </label>
+            <label>Target power = <output id="pwBOut">80%</output>
+              <input type="range" id="pwB" min="0.70" max="0.95" step="0.05" value="0.80">
+            </label>
+            <label>Expected drop-out = <output id="pwDOut">10%</output>
+              <input type="range" id="pwD" min="0" max="30" step="5" value="10">
+            </label>
+            <dl class="readout">
+              <div><dt>Per arm</dt><dd id="pwN">–</dd></div>
+              <div><dt>Per arm after drop-out</dt><dd id="pwNd">–</dd></div>
+              <div><dt>Total to recruit</dt><dd id="pwTot">–</dd></div>
+              <div><dt>Risk ratio</dt><dd id="pwRR">–</dd></div>
+            </dl>
+          </div>
+          <div class="lab-view"><canvas id="powerCanvas"></canvas></div>
+        </div>
+
+        <!-- CLUSTER -->
+        <div class="lab-pane" id="lab-cluster">
+          <div class="lab-controls">
+            <h3>Finding structure without labels</h3>
+            <p>k-means on simulated samples, the building block behind the ensemble clustering in my M-ABC work. Click the plot to add points, then step through the algorithm.</p>
+            <label>Number of clusters k = <output id="clKOut">3</output>
+              <input type="range" id="clK" min="2" max="6" value="3">
+            </label>
+            <label>True groups in the data = <output id="clGOut">3</output>
+              <input type="range" id="clG" min="2" max="6" value="3">
+            </label>
+            <label>Noise (spread) = <output id="clSOut">0.9</output>
+              <input type="range" id="clS" min="0.3" max="2.0" step="0.1" value="0.9">
+            </label>
+            <div class="btn-row">
+              <button class="btn small primary" id="clStep">One step</button>
+              <button class="btn small" id="clRunAll">Run to convergence</button>
+              <button class="btn small" id="clNew">New data</button>
+            </div>
+            <dl class="readout">
+              <div><dt>Iteration</dt><dd id="clIter">0</dd></div>
+              <div><dt>Within-cluster SS</dt><dd id="clWss">–</dd></div>
+              <div><dt>Mean silhouette</dt><dd id="clSil">–</dd></div>
+              <div><dt>Adjusted Rand index</dt><dd id="clAri">–</dd></div>
+            </dl>
+          </div>
+          <div class="lab-view"><canvas id="clusterCanvas"></canvas></div>
+        </div>
+
+        <!-- SURVEY -->
+        <div class="lab-pane" id="lab-survey">
+          <div class="lab-controls">
+            <h3>Vaccination coverage from a cluster survey</h3>
+            <p>Children are sampled within villages, so answers are correlated. The design effect widens the confidence interval compared with a simple random sample.</p>
+            <label>True coverage = <output id="svPOut">72%</output>
+              <input type="range" id="svP" min="20" max="98" value="72">
+            </label>
+            <label>Clusters = <output id="svMOut">30</output>
+              <input type="range" id="svM" min="10" max="80" step="5" value="30">
+            </label>
+            <label>Children per cluster = <output id="svBOut">10</output>
+              <input type="range" id="svB" min="5" max="30" value="10">
+            </label>
+            <label>Intra-cluster correlation ρ = <output id="svIOut">0.15</output>
+              <input type="range" id="svI" min="0" max="0.5" step="0.01" value="0.15">
+            </label>
+            <div class="btn-row"><button class="btn small primary" id="svRun">Run 1 survey</button></div>
+            <dl class="readout">
+              <div><dt>Estimate</dt><dd id="svEst">–</dd></div>
+              <div><dt>DEFF = 1 + (b−1)ρ</dt><dd id="svDeff">–</dd></div>
+              <div><dt>95% CI (design-based)</dt><dd id="svCi">–</dd></div>
+              <div><dt>Effective sample size</dt><dd id="svEss">–</dd></div>
+            </dl>
+          </div>
+          <div class="lab-view"><canvas id="surveyCanvas"></canvas></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section" id="research">
+      <div class="section-head reveal">
+        <p class="kicker">Research &amp; software</p>
+        <h2>Methods I build, and code you can run</h2>
+        <p class="sub">My PhD at SCK CEN and Hasselt University develops statistical methods for integrating multi-omics data. Each method ships as open, reproducible software.</p>
+      </div>
+      <div class="cards">
+        <article class="card feature reveal">
+          <div class="card-tags"><span>R package</span><span>Multi-omics</span><span>Simulation</span></div>
+          <h3>SUMO</h3>
+          <p class="q">How do you test a multi-omics method when you never know the true signal in real data?</p>
+          <p>Simulation Utilities for Multi-Omics data. SUMO generates datasets with configurable latent factors, signal blocks, noise levels and heterogeneity, so methods for factor analysis, clustering and biclustering can be benchmarked against a known truth.</p>
+          <div class="metrics"><div><b>2025</b><span>Bioinformatics Advances</span></div><div><b>R</b><span>open source</span></div><div><b>∞</b><span>scenarios</span></div></div>
+          <div class="card-viz" data-viz="heatmap"></div>
+          <a class="link" href="https://github.com/bosangir" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card feature reveal">
+          <div class="card-tags"><span>Ensemble learning</span><span>Integrative clustering</span></div>
+          <h3>M-ABC</h3>
+          <p class="q">Can clusters that agree across several omics layers be trusted more than any single layer?</p>
+          <p>Multi-data Aggregating Bundles of Clusters extends the ABC method to joint clustering of multi-source data. It runs ensemble clustering within each dataset and integrates the sample-level dissimilarities into one consensus structure.</p>
+          <div class="metrics"><div><b>Multi-source</b><span>clustering</span></div><div><b>Under</b><span>review</span></div><div><b>R</b><span>implementation</span></div></div>
+          <div class="card-viz" data-viz="dendro"></div>
+          <a class="link" href="https://github.com/bosangir" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card reveal">
+          <div class="card-tags"><span>Benchmark</span><span>Factor analysis</span></div>
+          <h3>Benchmarking factor models for multi-omics</h3>
+          <p class="q">Which unsupervised factor method recovers biology best, and when does it fail?</p>
+          <p>A systematic comparison of unsupervised factor-analysis methods for multi-omics integration, using simulated truth from SUMO and real radiobiology data.</p>
+          <a class="link" href="#publications">See publication →</a>
+        </article>
+        <article class="card reveal">
+          <div class="card-tags"><span>Bicluster</span><span>Methodology</span></div>
+          <h3>Adaptive biclustering</h3>
+          <p class="q">Which genes behave together, and in which samples only?</p>
+          <p>Methods for discovering biclusters across omics layers when signals are weak and heterogeneous, so local structure is not lost in global averages.</p>
+          <span class="status">In development</span>
+        </article>
+        <article class="card reveal">
+          <div class="card-tags"><span>R</span><span>Vaccines</span><span>Surveys</span></div>
+          <h3>vaxsurvR</h3>
+          <p class="q">How do you go from raw survey exports to coverage tables you can defend?</p>
+          <p>Management, quality assurance, de-identification and analysis of vaccination coverage surveys, with structured epidemiological workflows and transparent reporting.</p>
+          <a class="link" href="https://github.com/bosangir/vaxsurvR" target="_blank" rel="noopener">github.com/bosangir/vaxsurvR →</a>
+        </article>
+        <article class="card reveal">
+          <div class="card-tags"><span>R</span><span>Data QA</span><span>Ebola</span></div>
+          <h3>Ebola-VE</h3>
+          <p class="q">Is the trial database clean enough to estimate vaccine effects?</p>
+          <p>Data quality assurance pipelines for Ebola vaccine data: range and consistency checks, query listings and reproducible reports for data managers and investigators.</p>
+          <a class="link" href="https://github.com/bosangir/Ebola-VE" target="_blank" rel="noopener">github.com/bosangir/Ebola-VE →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <p class="kicker">Experience</p>
+        <h2>A decade from the field to the method</h2>
+        <p class="sub">Click a role to open its details.</p>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- IMPACT BAND -->
+    <section class="band reveal">
+      <div><b>Phase II</b><span>Ebola vaccine trial (EBOVAC) in the DRC: biostatistics and data management</span></div>
+      <div><b>DSMB</b><span>member for a DNDi clinical trial in the DRC</span></div>
+      <div><b>7</b><span>studies on HIV prevention, HSV-2 and HPV at KEMRI–University of Washington</span></div>
+      <div><b>Lancet ID</b><span>co-author on secondary outcomes of a randomised phase 2 trial</span></div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
+      <div class="section-head reveal">
+        <p class="kicker">Publications</p>
+        <h2>Peer-reviewed work</h2>
+        <p class="sub">Filter by area, or search by title, journal or year.</p>
+      </div>
+      <div class="pub-tools reveal">
+        <div class="chips" id="pubChips"></div>
+        <input type="search" id="pubSearch" placeholder="Search publications…" aria-label="Search publications">
+      </div>
+      <ul class="pubs" id="pubList"></ul>
+    </section>
+
+    <!-- AI -->
+    <section class="section" id="ai">
+      <div class="section-head reveal">
+        <p class="kicker">AI &amp; modern data stack</p>
+        <h2>Trained across the AI and data-engineering landscape</h2>
+        <p class="sub">Alongside classical statistics I have completed training in machine learning, AI and modern data infrastructure, with a focus on doing it responsibly in health.</p>
+      </div>
+      <div class="ai-grid">
+        <div class="ai-radar reveal">
+          <canvas id="radarCanvas" aria-label="Skills radar chart"></canvas>
+          <p class="caption">Self-assessed depth across eight areas (0–10).</p>
+        </div>
+        <div class="ai-cards" id="aiCards"></div>
+      </div>
+    </section>
+
+    <!-- TEACHING -->
+    <section class="section" id="teaching">
+      <div class="section-head reveal">
+        <p class="kicker">Teaching</p>
+        <h2>I also teach it</h2>
+        <p class="sub">Since 2020 I've taught R, data management and biostatistics to master's students and working researchers.</p>
+      </div>
+      <div class="teach">
+        <article class="teach-card reveal">
+          <span class="teach-org">Hasselt University</span>
+          <h3>R programming</h3>
+          <p>Master of Statistics and Data Science, with Prof. dr. Ziv Shkedy. From vectors to functions, simulation and reproducible reports.</p>
+        </article>
+        <article class="teach-card reveal">
+          <span class="teach-org">University of Antwerp</span>
+          <h3>Data management &amp; statistical software</h3>
+          <p>Master of Epidemiology, with Prof. dr. Steve Abrams. Database design, cleaning, REDCap and analysis workflows.</p>
+        </article>
+        <article class="teach-card reveal">
+          <span class="teach-org">University of Antwerp · summer school</span>
+          <h3>Epidemiology, Biostatistics &amp; Qualitative Methods</h3>
+          <p>An annual intensive course for health professionals, covering study design through to applied analysis.</p>
+        </article>
+        <article class="teach-card reveal">
+          <span class="teach-org">Open materials</span>
+          <h3>Statistical inference &amp; clinical research</h3>
+          <p>Open course sites on statistical inference, foundations of clinical research and scientific communication, built in R Markdown and Quarto.</p>
+          <a class="link" href="https://github.com/bosangir/statistical-inference" target="_blank" rel="noopener">Course repository →</a>
+        </article>
+      </div>
+      <div class="principles reveal">
+        <div><span>01</span><h4>Start with the question</h4><p>A model is only as good as the question it answers. Estimands first, code second.</p></div>
+        <div><span>02</span><h4>Simulate before you trust</h4><p>If a method can't recover a known truth in simulation, it shouldn't be used on real patients.</p></div>
+        <div><span>03</span><h4>Show the uncertainty</h4><p>Intervals, posteriors and sensitivity analyses belong in the main result, not the appendix.</p></div>
+        <div><span>04</span><h4>Make it reproducible</h4><p>Version control, literate code and documented data flows, so someone else can rerun every number.</p></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="section-head reveal">
+        <p class="kicker">Education &amp; awards</p>
+        <h2>Training</h2>
+      </div>
+      <div class="edu">
+        <div class="edu-item reveal"><span class="yr">2023 – now</span><h3>PhD, Biostatistics &amp; Statistical Bioinformatics</h3><p>SCK CEN (Belgian Nuclear Research Centre) &amp; Hasselt University</p></div>
+        <div class="edu-item reveal"><span class="yr">2018 – 2021</span><h3>MSc Statistics &amp; Data Science (Biostatistics), Distinction</h3><p>Hasselt University. Thesis with Janssen on inter-rater reliability of a paediatric RSV severity scoring system.</p></div>
+        <div class="edu-item reveal"><span class="yr">2012 – 2015</span><h3>BSc Mathematics (Statistics) &amp; Computer Science, First Class Honours</h3><p>Jomo Kenyatta University of Agriculture and Technology, Kenya</p></div>
+        <div class="edu-item reveal award"><span class="yr">2018 – 2020</span><h3>VLIR-UOS Scholarship</h3><p>Awarded for the Master of Statistics and Data Science at Hasselt University</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact reveal" id="contact">
+      <h2>Have data that needs a careful answer?</h2>
+      <p>Trial statistics, DSMB support, survey analysis, multi-omics methods, data-management systems or R training for your team. I'm happy to talk.</p>
+      <div class="hero-actions center">
+        <a class="btn primary" href="mailto:b.osangir@gmail.com">Email me</a>
+        <a class="btn" href="https://github.com/bosangir" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="#publications">Read the papers</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Bernard Isekah Osang'ir · Statistics · Computation · Biological insight</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
